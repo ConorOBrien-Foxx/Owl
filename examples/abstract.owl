@@ -1,0 +1,9 @@
+a       i i      | $i = 2
+a       e uia    | $e = 21 (uia)
+a       uia oa   | $uia = 3
+a       uie oy   | $uie = 8
+a       uii yaay | $uii = 50
+oya     e i      | $a = mem[e + i]
+a       oo e     | print_mode = 1
+e       a        | print($a)
+e       uii      | print($uii)

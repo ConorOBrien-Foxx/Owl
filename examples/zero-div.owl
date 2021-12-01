@@ -1,0 +1,8 @@
+a   a a     | $a = 0
+a   e i     | $e = 2
+
+oo  i e a   | $i = $a / $e
+
+
+a oo e      | print_mode = 2
+e i         | print($i)

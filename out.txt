@@ -1,0 +1,200 @@
+!! Debug mode engaged !!
+ 0x64  | 'a'
+ 0x65  | 'e'
+ 0x66  | 'e'
+ 0x67  | 'a'
+ 0x68  | 'i'
+ 0x69  | 'e'
+ 0x6a  | 'i'
+ 0x6b  | 'i'
+ 0x6c  | 'a'
+ 0x6d  | 'o'
+ 0x6e  | 'o'
+ 0x6f  | 'i'
+ 0x70  | 'e'
+ 0x71  | 'a'
+ 0x72  | 'a'
+ 0x73  | 'o'
+ 0x74  | 'o'
+ 0x75  | 'e'
+ 0x76  | 'o'
+ 0x77  | 'a'
+ 0x78  | 'a'
+ 0x79  | 'a'
+ 0x7a  | 'e'
+ 0x7b  | 'e'
+ 0x7c  | 'a'
+ 0x7d  | 'i'
+ 0x7e  | 'a'
+ 0x7f  | 'o'
+ 0x80  | 'e'
+ 0x81  | 'a'
+ 0x82  | 'a'
+ 0x83  | 'e'
+ 0x84  | 'a'
+ 0x85  | 'o'
+ 0x86  | 'o'
+ 0x87  | 'a'
+ 0x88  | 'e'
+ 0x89  | 'a'
+ 0x8a  | 'a'
+ 0x8b  | 'a'
+ 0x8c  | 'a'
+ 0x8d  | 'o'
+ 0x8e  | 'a'
+ 0x8f  | 'i'
+ 0x90  | 'i'
+ 0x91  | 'e'
+ 0x92  | 'u'
+ 0x93  | 'o'
+ 0x94  | 'e'
+ 0x95  | 'i'
+ 0x96  | 'i'
+ 0x97  | 'e'
+ 0x98  | 'a'
+ 0x99  | 'o'
+ 0x9a  | 'o'
+ 0x9b  | 'e'
+ 0x9c  | 'e'
+ 0x9d  | 'i'
+ 0x9e  | 'u'
+!! Done reading, initiating command mode !!
+ 0x64  | 'a'
+Command: 'a'
+ 0x65  | 'e'
+Operand #1 added: $1
+ 0x66  | 'e'
+Operand #2 added: $1
+>>> $1 = 1;
+ 0x67  | 'a'
+Command: 'a'
+ 0x68  | 'i'
+Operand #1 added: $2
+ 0x69  | 'e'
+Operand #2 added: $1
+>>> $2 = 1;
+ 0x6a  | 'i'
+Command: 'i'
+ 0x6b  | 'i'
+Operand #1 added: $2
+>>> loop iter (with $2 = 1)
+Pushing address: 107 (0x6b)
+ 0x6c  | 'a'
+Command: 'a'
+ 0x6d  | 'o'
+ 0x6e  | 'o'
+Operand #1 added: $6
+ 0x6f  | 'i'
+Operand #2 added: $2
+>>> $6 = 2;
+ 0x70  | 'e'
+Command: 'e'
+ 0x71  | 'a'
+Operand #1 added: $0
+>>> getchar($0);
+
+ 0x72  | 'a'
+Command: 'a'
+ 0x73  | 'o'
+ 0x74  | 'o'
+Operand #1 added: $6
+ 0x75  | 'e'
+Operand #2 added: $1
+>>> $6 = 1;
+ 0x76  | 'o'
+Command: 'o'
+ 0x77  | 'a'
+ 0x78  | 'a'
+Operand #1 added: $0
+ 0x79  | 'a'
+Operand #2 added: $0
+ 0x7a  | 'e'
+Operand #3 added: $1
+Sub property: a
+$0 = $0 + $1
+ 0x7b  | 'e'
+Command: 'e'
+ 0x7c  | 'a'
+Operand #1 added: $0
+>>> println($0);
+105
+
+ 0x7d  | 'i'
+Command: 'i'
+ 0x7e  | 'a'
+Operand #1 added: $0
+>>> loop iter (with $0 = 105)
+Pushing address: 126 (0x7e)
+ 0x7f  | 'o'
+Command: 'o'
+ 0x80  | 'e'
+ 0x81  | 'a'
+Operand #1 added: $0
+ 0x82  | 'a'
+Operand #2 added: $0
+ 0x83  | 'e'
+Operand #3 added: $1
+Sub property: e
+$0 = $0 - $1
+ 0x84  | 'a'
+Command: 'a'
+ 0x85  | 'o'
+ 0x86  | 'o'
+Operand #1 added: $6
+ 0x87  | 'a'
+Operand #2 added: $0
+>>> $6 = 0;
+ 0x88  | 'e'
+Command: 'e'
+ 0x89  | 'a'
+Operand #1 added: $0
+>>> putchar($0);
+h
+ 0x8a  | 'a'
+Command: 'a'
+ 0x8b  | 'a'
+Operand #1 added: $0
+ 0x8c  | 'a'
+Operand #2 added: $0
+>>> $0 = 0;
+ 0x8d  | 'o'
+Command: 'o'
+ 0x8e  | 'a'
+ 0x8f  | 'i'
+Operand #1 added: $2
+ 0x90  | 'i'
+Operand #2 added: $2
+ 0x91  | 'e'
+Operand #3 added: $1
+Sub property: a
+$2 = $2 + $1
+ 0x92  | 'u'
+Command: 'u'
+ 0x7d  | 'i'
+Command: 'i'
+ 0x7e  | 'a'
+Operand #1 added: $0
+>>> loop iter (with $0 = 0)
+Command: 'o'
+Operand #1 added: $0
+Operand #2 added: $0
+Operand #3 added: $1
+Command: 'a'
+Operand #1 added: $6
+Operand #2 added: $0
+Command: 'e'
+Operand #1 added: $0
+Command: 'a'
+Operand #1 added: $0
+Operand #2 added: $0
+Command: 'o'
+Operand #1 added: $2
+Operand #2 added: $2
+Operand #3 added: $1
+Command: 'u'
+ 0x93  | 'o'
+Command: 'o'
+ 0x94  | 'e'
+ 0x95  | 'i'
+Operand #1 added: $2
+ 0x96  | 'i'
